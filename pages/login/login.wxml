@@ -1,0 +1,81 @@
+<view class="logo">
+<image src="../../src/public/logo.png">
+</image>
+</view>
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>我是用户</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>我是商户</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>我是服务人员</view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+  <swiper-item>
+      <view class='swiper_con'>
+         <view style="width=100%">
+         </view>
+      <view class="box">
+         <input placeholder="请输入手机号" >
+         </input>
+      </view>
+    <view class="box">
+       <input placeholder="请输入验证码" >
+       </input>
+         <button class="login-btn">
+           获取验证码
+         </button>
+     </view>
+     <van-cell-group>
+        <view class="tips">未注册手机验证后自动登录</view>
+        <button class="btn">
+        登录
+        </button>
+      </van-cell-group>
+      </view>
+  </swiper-item>
+  <swiper-item>
+      <view class='swiper_con'>
+         <view style="width=100%">
+         </view>
+      <view class="box">
+         <input placeholder="请输入手机号" >
+         </input>
+      </view>
+    <view class="box">
+       <input placeholder="请输入验证码" >
+       </input>
+         <button class="login-btn">
+           获取验证码
+         </button>
+     </view>
+     <van-cell-group>
+        <view class="tips">未注册手机验证后自动登录</view>
+        <button class="btn">
+        登录
+        </button>
+      </van-cell-group>
+      </view>
+  </swiper-item>
+  <swiper-item>
+      <view class='swiper_con'>
+         <view style="width=100%">
+         </view>
+      <view class="box">
+         <input placeholder="请输入手机号" >
+         </input>
+      </view>
+    <view class="box">
+       <input placeholder="请输入验证码" >
+       </input>
+         <button class="login-btn">
+           获取验证码
+         </button>
+     </view>
+     <van-cell-group>
+        <view class="tips">未注册手机验证后自动登录</view>
+        <button class="btn">
+        登录
+        </button>
+      </van-cell-group>
+      </view>
+  </swiper-item>
+</swiper>
+

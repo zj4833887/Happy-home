@@ -1,0 +1,4 @@
+<view style="width:100rpx;height:100rpx;background:red;" class="{{showView?'show':'hide'}}">
+
+</view>
+<button bindtap="onChangeShowState">显示/隐藏view</button>

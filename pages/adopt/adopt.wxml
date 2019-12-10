@@ -1,0 +1,20 @@
+
+<van-tabs active="{{ active }}" bind:change="onChange" color="#FEB466" title-active-color="#FEB466">
+  <van-tab title="待服务" >
+   <view class="box">
+      <image src="../../src/public/unc.png">
+      </image>
+      <view class="unc-top">
+      <view>审核通过,</view>
+      <view>恭喜您加入某某公司</view>
+      </view>
+      <button class="unt-btn">
+      开始接单
+      </button>
+   </view>
+  </van-tab>
+  <van-tab title="进行中">
+  </van-tab>
+  <van-tab title="已完成">
+  </van-tab>
+</van-tabs>

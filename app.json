@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/my/show/show",
+    "pages/my/feedback/feedback",
+    "pages/my/setup/setup",
+    "pages/card/card",
+    "pages/card/rule/rule",
+    "pages/information/information",
+    "pages/entry/entry",
+    "pages/adopt/adopt",
+    "pages/authentication/authentication",
+    "pages/unclaimed/unclaimed",
+    "pages/login/login",
+    "pages/details/details",
+    "pages/index/index"
+    
+  ],
+  "usingComponents": {
+    "van-field": "/@vant/weapp/field/index",
+    "van-button": "/@vant/weapp/button/index",
+    "van-cell": "/@vant/weapp/cell/index",
+    "van-cell-group": "/@vant/weapp/cell-group/index",
+    "van-tab": "/@vant/weapp/tab/index",
+    "van-tabs": "/@vant/weapp/tabs/index",
+    "van-divider": "/@vant/weapp/divider/index",
+    "van-popup": "/@vant/weapp/popup/index",
+    "van-toast": "/@vant/weapp/toast/index",
+    "van-dialog": "/@vant/weapp/dialog/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐居优家",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#853153",
+    "selectedColor": "#956214",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "接单",
+        "iconPath": "src/public/Receipt.png",
+        "selectedIconPath": "src/public/Receipt.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

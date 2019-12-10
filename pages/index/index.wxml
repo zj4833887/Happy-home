@@ -1,0 +1,160 @@
+<van-tabs active="{{ active }}" bind:change="onChange"
+color="#FEB466" title-active-color="#FEB466"
+>
+  <van-tab title="待服务">
+  <view class="index-box">
+  <view class="index-top">
+      <view class="index-box-left">
+      订单号：20191226001
+      </view>
+      <view class="index-box-right">
+      服务项目：日常保洁
+      </view>
+  </view>
+  <view class="index-bottom">
+      <view class="index-bottom-top">
+      预约时间：2019-12-29  09:30
+      </view>
+      <view class="index-bottom-center">
+        <view style="width:100%;height:100rpx;">
+            <view class="circular">
+            </view>
+            <view class="index-bottom-center-address">
+            服务地址：北京市 海淀区 西北旺镇 黑龙潭路
+            58号 四海公寓 1号楼 C栋 208             
+            </view>
+            <view class="index-bottom-center-right-img">
+            <image src="../../src/index/10.png">
+            </image>
+            </view>
+            <view class="index-bottom-center-right">
+            去这里
+            </view>
+  </view>
+        <!-- 绿点开始 -->
+        <view style="width:100%;height:74rpx;">
+            <view class="green" >
+            </view>
+            <view class="name">
+            于女士：137****8830
+            </view>
+        </view>
+        <view class="Remarks">
+        备注：希望阿姨明天准时到！谢谢！
+        </view>
+        <view class="index-bottom-bottom">
+        <view class="index-bottom-bottom-left">
+        合计：
+        <text style="color:red; font-size: 26rpx;">¥300</text>
+        </view>
+      <button bindtap='search'   class="index-bottom-bottom-right" >
+      立即沟通
+      </button>
+        </view>
+      </view>
+    </view>
+  </view>
+  </van-tab>
+  <van-tab title="进行中">
+    <view class="index-box">
+      <view class="index-top">
+      <view class="index-box-left">
+      订单号：20191226001
+      </view>
+      <view class="index-box-right">
+      服务项目：日常保洁
+      </view>
+    </view>
+      <view class="index-bottom">
+      <view class="index-bottom-top">
+      预约时间：2019-12-29  09:30
+      </view>
+      <view class="index-bottom-center">
+        <view style="width:100%;height:100rpx;">
+            <view class="circular">
+            </view>
+            <view class="index-bottom-center-address">
+            服务地址：北京市 海淀区 西北旺镇 黑龙潭路
+            58号 四海公寓 1号楼 C栋 208             
+            </view>
+  </view>
+        <!-- 绿点开始 -->
+        <view style="width:100%;height:74rpx;">
+            <view class="green" >
+            </view>
+            <view class="name">
+            于女士：137****8830
+            </view>
+        </view>
+        <view class="Remarks">
+        备注：希望阿姨明天准时到！谢谢！
+        </view>
+        <view class="index-bottom-bottom">
+        <view class="index-bottom-bottom-left">
+        合计：
+        <text style="color:red; font-size: 26rpx;">¥300</text>
+        </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </van-tab>
+  <van-tab title="已完成">
+    <view class="index-box">
+      <view class="index-top">
+      <view class="index-box-left">
+      订单号：20191226001
+      </view>
+      <view class="index-box-right">
+      服务项目：日常保洁
+      </view>
+    </view>
+      <view class="index-bottom">
+      <view class="index-bottom-top">
+      完成时间：2019-12-29  09:30
+      </view>
+      <view class="index-bottom-center">
+        <view style="width:100%;height:100rpx;">
+            <view class="circular">
+            </view>
+            <view class="index-bottom-center-address">
+            服务地址：北京市 海淀区 西北旺镇 黑龙潭路
+            58号 四海公寓 1号楼 C栋 208             
+            </view>
+  </view>
+        <!-- 绿点开始 -->
+        <view style="width:100%;height:74rpx;">
+            <view class="green" >
+            </view>
+            <view class="name">
+            于女士：137****8830
+            </view>
+        </view>
+        <view class="Remarks">
+        备注：希望阿姨明天准时到！谢谢！
+        </view>
+        <view class="index-bottom-bottom">
+        <view class="index-bottom-bottom-left">
+        合计：
+        <text style="color:red; font-size: 26rpx;">¥300</text>
+        </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </van-tab>
+</van-tabs>
+<!-- 弹框开始 -->
+<view class="frame-box" class="index-bottom-bottom-right{{isHidden?'hidden':''}}" >
+<view class="frame">
+    <view class="frame-top">
+    音频
+    </view>
+    <view class="frame-bottom">
+    视频
+    </view>
+</view>
+<view class="cancel">
+取消
+</view>
+</view>

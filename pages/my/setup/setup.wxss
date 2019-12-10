@@ -1,0 +1,25 @@
+page{
+  background: #F6F6F6;
+}
+.box{
+  width: 690rpx;
+  height: 100%;
+  margin: 0 auto;
+}
+.box-top{
+  margin-top: 41rpx;
+}
+.van-cell__title{
+  font-size: 28rpx;
+  color: #333333;
+}
+.van-cell__value{
+  font-size: 28rpx;
+  color: #666666;
+}
+.box-bottom{
+  width: 690rpx;
+  height: 401rpx;
+  margin-top: 30rpx;
+  margin-bottom:75rpx; 
+}

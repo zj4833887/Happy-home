@@ -1,0 +1,89 @@
+.logo{
+  width: 98rpx;
+  height: 99rpx;
+  margin: 0 auto;
+  border-radius: 10%;
+  margin-top: 22rpx;
+}
+.logo>image{
+  width: 100%;
+  height: 100%;
+}
+.tab {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+ 
+.topTabSwiper {
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+  margin-top: 99rpx; 
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ 
+.tabBorer {
+  border-bottom: 1px solid #FF8A00;
+  color: #FF8A00;
+}
+ 
+.swiper {
+  width: 100%;
+}
+ 
+.swiper_con {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  padding: 80rpx 0;
+}
+.tips{
+  width: 286rpx;
+  height: 24rpx;
+  margin-left: 112rpx;
+  color: #00C2E5;
+  font-size: 24rpx;
+  margin-top: 17rpx;
+}
+.btn{
+  width: 562rpx;
+  height: 89rpx;
+  border-radius: 50rpx;
+  margin-top: 48rpx;
+  background: #FF8A00;
+  line-height: 89rpx;
+}
+/* 输入框 */
+.box{
+  width: 568rpx;
+  height: 95rpx;
+  background: #F8F8F8;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-top: 35rpx;
+}
+.box>input{
+  margin-top: 10rpx;
+  text-align: center;
+  line-height: 95rpx;
+  float: left;
+}
+.login-btn{
+  position: absolute;
+  top: 254rpx;
+  left: 455rpx;
+  width: 188rpx;
+  height: 65rpx;
+  border-radius: 30rpx;
+  background: #FF8A00;
+  float: right;
+  font-size: 24rpx;
+  color: #462601;
+  z-index: 999;
+}

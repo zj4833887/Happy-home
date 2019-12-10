@@ -1,0 +1,37 @@
+page{
+  background: #F6F6F6;
+}
+.box{
+  width: 690rpx;
+  height: 716rpx;
+  background: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.van-cell__title{
+  font-size: 28rpx;
+}
+.van-cell__value{
+  font-size: 24rpx;
+}
+.van-cell__label{
+  width: 400rpx;
+  font-size: 24rpx;
+}
+.van-field__input van-field__input--right van-field__input--textarea{
+  margin-top: 15rpx;
+  text-align: center;
+  line-height: 15rpx;
+}
+#book{
+  border-bottom: 0px solid #333333;
+}
+/* 底部文字开始 */
+.bottom{
+  width: 311rpx;
+  height: 23rpx;
+  margin: 23rpx 0 0 53rpx;
+  font-size: 24rpx;
+  color: #777777;
+  margin-bottom: 44rpx;
+}

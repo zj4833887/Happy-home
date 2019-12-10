@@ -1,0 +1,62 @@
+<view class="box">
+  <van-cell title="请选择反馈类型" is-link arrow-direction="down" />
+  <view style="height:20rpx">
+  </view>
+  <van-field
+    value="{{ value }}"
+    placeholder="填写手机号，方便我们联系你"
+    border="{{ false }}"
+    bind:change="onChange"
+    custom-style="font-size:24rpx;color:#999999"
+  />
+  <view style="height:20rpx"></view>
+  <view class="xinxi">
+  <textarea placeholder='对我们的商品、服务、APP有什么意见或建议请在这里告诉我们...' 
+    minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+    <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+  </textarea>
+</view>
+</view>
+<!--  弹框开始  -->
+<view class="tk-box">
+<view class="tk">
+    <view>
+        <view class="tk-top">
+          商品相关
+        </view>
+            <view class="tk-top-hx">
+            </view>
+        <view class="tk-top">
+          订单支付
+        </view>
+            <view class="tk-top-hx">
+            </view>
+        <view class="tk-top">
+         账户积分
+        </view>
+            <view class="tk-top-hx">
+            </view>
+        <view class="tk-top">
+          优惠活动
+        </view>
+            <view class="tk-top-hx">
+            </view>
+        <view class="tk-top">
+          产品建议
+        </view>
+            <view class="tk-top-hx">
+            </view>
+        <view class="tk-top">
+          其他
+        </view>
+        
+    </view>
+    
+</view>
+<view class="tk-bottom">
+        取消
+    </view>
+</view>
+
+
+
