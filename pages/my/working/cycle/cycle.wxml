@@ -1,0 +1,30 @@
+<view class="box">
+  <view class="box-top">
+    
+    <van-checkbox-group value="{{ result }}" bind:change="onChange">
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="a">星期日</van-checkbox>
+  </view>
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="b">星期一</van-checkbox>
+   </view>
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="c">星期二</van-checkbox>
+  </view>
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="d">星期三</van-checkbox>
+  </view>
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="e">星期四</van-checkbox>
+   </view>
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="f">星期五</van-checkbox>
+  </view>
+  <view class="box-left">
+  <van-checkbox checked-color="#FEB466" name="g">星期六</van-checkbox>
+  </view>
+</van-checkbox-group>
+    
+  </view>
+</view>
+

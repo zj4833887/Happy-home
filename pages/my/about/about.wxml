@@ -1,0 +1,33 @@
+<view class="logo">
+<image src="../../../src/public/logo.png">
+</image>
+    <view class="company">
+    乐居优家
+    </view>
+</view>
+    <view class="emali">
+          客服邮箱：
+      <text>lejuyoujia2019@163.com</text>
+    </view>
+    <view class="xt">
+    </view>
+    <view class="emali">
+          客服电话：
+      <text>400-464-9168</text>
+    </view>
+    <view class="xt">
+    </view>
+    <view class="emali">
+           版本号：
+      <text>   1.0.0</text>
+    </view>
+    <view class="code">
+    <image src="../../../src/public/logo.png">
+    </image>
+    </view>
+  <view class="platform">
+  关注我们微信公众号
+  </view>
+  <view class="edition">
+  Copyright © 2019北京乐居优家信息技术有限公司
+  </view>

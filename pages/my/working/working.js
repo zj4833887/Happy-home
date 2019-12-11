@@ -1,23 +1,13 @@
-// pages/card/card.js
+// pages/my/working/working.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showView: true,
-    hide:false
+
   },
-  onChangeShowState: function () {
-    this.setData({
-      showView: (!this.data.showView)
-    })
-  },
-  onChange:function(){
-    this.setData({
-      hide: (!this.data.hide)
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -5,12 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-   isHidden:true
+    showView: true,
   },
-  toggleHidden(){
-    let flag=!this.data.isHidden;
+  onChangeShowState: function () {
     this.setData({
-      isHidden:flag
+      showView: (!this.data.showView)
     })
   },
   

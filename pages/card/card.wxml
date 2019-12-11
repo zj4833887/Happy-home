@@ -5,23 +5,23 @@
     <view class="card-time">
     上班时间：8:00
     </view>
-    <button class='card-round'>
+    <button class='card-round'bindtap="onChangeShowState">
     上班打卡
     </button>
     <view class="closing-time">
     下班时间：21:00
     </view>
-    <button class="card-round down">
+    <button class="card-round down"bindtap="onChangeShowState">
     下班打卡
     </button>
 </view>
 <!-- 弹出框 -->
-<view class='{{showview ? "hide" : "show"}}'>
+<view class="{{showView?'show':'hide'}}">
 <view class="box-Popup">
     <view class="box-Popup-top">
     打卡成功
     </view>
-    <button class="box-Popup-bottom">
+    <button class="box-Popup-bottom" bindtap="onChange">
          确定
     </button>
 </view>

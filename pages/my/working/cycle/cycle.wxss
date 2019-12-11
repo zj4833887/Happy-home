@@ -1,0 +1,13 @@
+.box{
+  width: 634rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 65rpx;
+}
+.box-left{
+  width: 634rpx;
+  height: 100rpx;
+}

@@ -5,15 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showView: true
-
+    showView: true,
+    hide:false
   },
   onChangeShowState: function () {
     this.setData({
       showView: (!this.data.showView)
     })
   },
-  
+  hide: function () {
+    this.setData({
+      hide: (!this.data.hide)
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

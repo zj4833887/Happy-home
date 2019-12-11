@@ -91,8 +91,9 @@ button::after{
   border: 1px solid rgba(0,0,0,0);
 }
 .hide{
-  display: none;
+  display:block;
 }
+
 .show{
-  display: block;
+  display: none;
 }

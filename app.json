@@ -12,8 +12,11 @@
     "pages/unclaimed/unclaimed",
     "pages/login/login",
     "pages/details/details",
-    "pages/index/index"
-    
+    "pages/index/index",
+    "pages/my/about/about",
+    "pages/my/working/working",
+    "pages/my/working/cycle/cycle",
+    "pages/my/working/myworking/myworking"
   ],
   "usingComponents": {
     "van-field": "/@vant/weapp/field/index",
@@ -25,7 +28,9 @@
     "van-divider": "/@vant/weapp/divider/index",
     "van-popup": "/@vant/weapp/popup/index",
     "van-toast": "/@vant/weapp/toast/index",
-    "van-dialog": "/@vant/weapp/dialog/index"
+    "van-dialog": "/@vant/weapp/dialog/index",
+    "van-checkbox": "/@vant/weapp/checkbox/index",
+    "van-checkbox-group": "/@vant/weapp/checkbox-group/index"
   },
   "window": {
     "backgroundTextStyle": "light",

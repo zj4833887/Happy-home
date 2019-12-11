@@ -1,22 +1,16 @@
-// pages/card/card.js
+// pages/my/working/cycle/cycle.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showView: true,
-    hide:false
+    result: ['a']
   },
-  onChangeShowState: function () {
+  onChange(event) {
     this.setData({
-      showView: (!this.data.showView)
-    })
-  },
-  onChange:function(){
-    this.setData({
-      hide: (!this.data.hide)
-    })
+      result: event.detail
+    });
   },
   /**
    * 生命周期函数--监听页面加载
