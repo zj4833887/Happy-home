@@ -1,0 +1,98 @@
+<view class="make-box">
+<image src="../../../src/make/big.png">
+</image>
+    <view class="make-box-left">
+    {{chooseDate}}
+    </view>
+    <view class="make-box-right">
+        <view class="weui-cells weui-cells_after-title" >
+ <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" catchtap='showModalBtn'>
+  <van-icon name="aim" />
+  <!-- <view class="weui-cell__ft weui-cell__ft_in-access">{{chooseDate}}</view> -->
+ </view>
+</view>
+  
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" hidden="{{showModal}}"></view>
+<view class="modal-dialog" hidden="{{showModal}}">
+ <view class='modalBox'>
+  <view class='box'>
+   <view class='calendarBox'>
+    <view class='calendarTitle'>
+     当前月份:
+     <text style='font-size:46rpx;'>{{thisMonth}}</text> 月
+    </view>
+    <block wx:for="{{week}}" wx:key="item">
+     <view class="week">{{week[index]}}</view>
+    </block>
+    <block wx:for="{{weekNum}}" wx:key="item">
+     <view class="week" style="border-bottom:0;color:transparent">0</view>
+    </block>
+    <block wx:for="{{dayList}}" wx:key="item">
+     <view class='week' style="border-bottom:0;background-color:{{dayIndex>index?'#f1f1f1':(tapThis==index?'#1296db':'')}};color:{{tapThis==index?'white':''}}" catchtap="chooseDate" data-index="{{index}}" data-value="{{item}}">{{item}}</view>
+    </block>
+   </view>
+  </view>
+ </view>
+</view>
+    </view>
+    <view class="make-xt">
+    </view>
+    <view class="make-week">
+    <block wx:for="{{week}}" wx:key="item">
+    <view class="make-week-left">
+    {{week[index]}}
+    </view>
+     </block>
+    </view>
+    <!-- 日期 -->
+    <view class="make-week">
+    <block wx:for="{{testnum}}" wx:key="key">
+    <view class="make-week-left">
+    {{item.week}}
+    </view>
+     </block>
+    </view>
+    <view class="day" >
+    <view class="day-box" wx:for="{{testnum}}" wx:key="key">
+     {{item.day}}
+      </view>
+    </view>
+    
+</view>
+<view class='calendar-week'>
+        <view wx:for='{{weekText}}' class='item' wx:key='{{item}}'>{{item}}</view>
+</view>
+
+<!-- 没有预约 -->
+<view class="no">
+  <view class="no-img">
+    <image src="../../../src/public/no.png">
+    </image>
+  </view>
+</view>
+<view class="yes">
+    <view class="yes-left">
+      <image src="../../../src/make/tx.png">
+      </image>
+    </view>
+    <view class="yes-left-name">
+    李鹏飞
+    </view>
+    <view class="yes-left-center">
+    <image src="../../../src/make/xingbienan.png">
+    </image>
+    </view>
+    <view class="yes-left-right">
+    111
+    </view>
+    <view class="yes-center">
+    预约时间：2019-10-15  下午
+    </view>
+    <view  class="yes-bottom">
+    咨询服务：月嫂-育儿嫂                
+    </view>
+     <view class="btn">
+     同意
+     </view>
+</view>
+

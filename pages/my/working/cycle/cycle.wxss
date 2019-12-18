@@ -9,5 +9,15 @@
 }
 .box-left{
   width: 634rpx;
-  height: 100rpx;
+  height: 70rpx;
+  border-bottom: 1px solid #EEEEEE;
+  }
+  .box-left-study{
+     width: 634rpx;
+     height: 70rpx;
+  }
+ checkbox .wx-checkbox-input{
+  border-radius: 50%;/* 圆角 */
+  width: 46rpx; /* 背景的宽 */
+  height: 46rpx; /* 背景的高 */
 }

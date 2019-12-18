@@ -7,12 +7,14 @@ Page({
   data: {
       min: 0,
       max: 200,
+      array: [ '中国', '巴西', '日本'],
 
-  }, inputs: function (e) {
+  }, 
+  inputs: function (e) {
     var value = e.detail.value;
     var len = parseInt(value.length);
+    // console.log(value)
     if (len > this.data.max) return;
-
     this.setData({
       currentWordNumber: len
     });
@@ -22,6 +24,18 @@ Page({
         content: '您输入的次数已达上限',
       })
     }
+  },
+  bindPickerChange: function (e) {
+    console.log(e.detail)
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  selectall: function (e) {
+    wx.redirectTo({
+      url: '/pages/my/leave/le/succes/succes',
+    })
   },
 
   /**

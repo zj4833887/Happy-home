@@ -1,0 +1,94 @@
+.box{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  height: 290rpx;
+  background: #FFBD5C;
+}
+.box>image{
+  width: 100%;
+  height: 100%;
+}
+.box-left{
+  position: absolute;
+  left: 75rpx;
+  top: 59rpx;
+  width: 100rpx;
+  height: 99rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box-left>image{
+  width: 100%;
+  height: 100%;
+}
+.box-center{
+  position: absolute;
+  left: 200rpx;
+  top:77rpx;
+  width: 100rpx;
+  height: 29rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+.box-right{
+  position: absolute;
+  left: 200rpx;
+  top: 122rpx;
+  width: 148rpx;
+  height: 23rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(82,47,0,1);
+}
+/* 中间开始 */
+.center{
+  position: absolute;
+  left: 80rpx;
+  top: 200rpx;
+  width:590rpx;
+  height:180rpx;
+  background:rgba(255,255,255,1);
+  border-radius:15rpx;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.center-top{
+  width: 89rpx;
+  height: 89rpx;
+}
+.center-left{
+  width:89rpx;
+height:24rpx;
+font-size:24rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(85,85,85,1);
+text-align: center;
+}
+.center-top>image{
+    width: 100%;
+    height: 100%;
+}
+/* 下边 */
+.bottom{
+  width: 633rpx;
+  height: 100rpx;
+  background: salmon;
+  margin: 0 auto;
+  margin-top: 115rpx;
+}
+.van-cell__value{
+  font-size:22rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+.van-cell van-cell--clickable{
+  background: #F6F6F6;
+}

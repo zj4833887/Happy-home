@@ -1,7 +1,15 @@
 
 <view class="box">
-<van-cell title="身份信息" is-link value="请完善信息" />
-<van-cell title="联系信息" is-link value="请完善信息" />
-<van-cell title="个人概况" is-link value="请完善信息" />
-<van-cell title="专业证书" is-link value="请完善信息" />
+<van-cell title="身份信息" is-link value="请完善信息"
+url="/pages/information/information"
+ />
+<van-cell title="联系信息" is-link value="请完善信息"
+url="/pages/my/contact/contact"
+ />
+<van-cell title="个人概况" is-link value="请完善信息"
+url="/pages/my/profile/profile"
+ />
+<van-cell title="专业证书" is-link value="请完善信息"
+url="/pages/my/major/major"
+ />
 </view>

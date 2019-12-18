@@ -1,0 +1,31 @@
+<view class="box">
+请填写正确的身份信息
+
+</view>
+<view class="height">
+</view>
+<van-field
+    label="健康证证件号："
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+  <view class="zp">
+  请上传真实的证件照片
+  </view>
+  <view class="zp-box">
+  <view class="userinfo">
+    <view bindtap="upload" class="up-btn"> + </view>
+  </view>
+  <block wx:for="{{tempFilePaths}}" wx:key="{{index}}">
+  <view class="up-box">
+    <image src="{{item }}" bindtap="listenerButtonPreviewImage" data-index="{{index}}" style="width: 100%;"/>
+    </view>
+  </block>
+  </view>
+  <!-- 按钮 -->
+  <view class="btn" >
+  <button bindtap="selectall" square class="col">保存</button>
+  </view>
+  

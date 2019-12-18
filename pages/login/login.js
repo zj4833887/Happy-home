@@ -1,16 +1,75 @@
 // pages/login/login.js
-Page({
-
+let { _post,_get} = require('../../utils/http.js')
+var commonMixin = require('../../utils/model.js')
+var WxValidate = require('../../utils/WxValidate.js')
+Page(Object.assign({
   /**
    * 页面的初始数据
-   */
+   */data:{
+     user:'18406567112',
+     code:'123456',
+     account:'',
+     password:'',
+     userPhone:'',
+     type:1
+   },
+
+  next:function(e){
+   let account = this.data.login.username
+   let password = this.data.login.password
+   let type=1
+    _post('login', { account, password, type}).then(res => {
+      if (res.code == 0) {
+        wx.switchTab({
+          url: '/pages/index/index'
+        })
+        
+      }
+    })
+    
+      console.log(1)
+  },
+  verification:function(){
+   
+    let userPhone = this.data.login.user
+    wx.showToast({
+      title: '获取验证码成功',
+    })
+    _post('getCode', {userPhone}).then(res => {
+      if (res.code == 200) {
+        this.setData({
+        })
+      }
+    })
+  },
+  service:function(e){
+    let phone = this.data.user
+    let code = this.data.code
+    _get('appletLogin', { phone, code }).then(res => {
+      if (res.code == 200) {
+        console.log(res)
+        var name = res.staff.name;
+        var Num = res.staff.shopid;
+        var id = res.staff.id
+        wx.setStorage({//存储到本地
+          key: "testNum",
+          data: {Num, name,id}
+        })
+        wx.switchTab({
+          url: '/pages/index/index'
+        })
+        this.setData({
+        })
+      }
+    })
+
+
+  },
   checkCurrent: function (e) {
     const that = this;
-
     if (that.data.currentData === e.target.dataset.current) {
       return false;
     } else {
-
       that.setData({
         currentData: e.target.dataset.current
       })
@@ -78,4 +137,4 @@ Page({
 
   }
   
-})
+}, commonMixin))

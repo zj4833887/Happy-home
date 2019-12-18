@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -57,8 +57,43 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/my/working/cycle/cycle",
-					"pathName": "pages/my/working/cycle/cycle",
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/my/book/book",
+					"pathName": "pages/my/book/book",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/my/leave/apply/apply",
+					"pathName": "pages/my/leave/apply/apply",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/information/information",
+					"pathName": "pages/information/information",
 					"query": "",
 					"scene": null
 				}

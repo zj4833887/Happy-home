@@ -1,0 +1,5 @@
+<view wx:for="{{dateList}}" wx:key="dateList*this" >
+{{item.week}}
+{{item.day}}
+1111
+</view>

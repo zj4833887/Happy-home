@@ -5,18 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-    result: ['a']
+    select_all: false,
+    listData: [
+      { code: "星期日", text: "星期日" },
+      { code: "星期一", text: "星期一" },
+      { code: "星期二", text: "星期二" },
+      { code: "星期三", text: "星期三" },
+      { code: "星期四", text: "星期四" },
+      { code: "星期五", text: "星期五" },
+      { code: "星期六", text: "星期六" }
+    ],
+    batchIds: '', 
+    batch:''
   },
-  onChange(event) {
+  checkboxChange: function (e) {
     this.setData({
-      result: event.detail
-    });
+      batchIds: e.detail.value  //单个选中的值
+    })
   },
+  selectall: function (e) {
+    var that = this;
+    var arr = [];   //存放选中id的数组
+    console.log(this)
+    arr = this.data.batchIds;
+    
+    wx.setStorageSync('arr', arr);
+    wx.navigateBack({
+      url: '/pages/my/working/myworking/myworking',
+      delta: 1
+    })
+
+  },
+  
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**

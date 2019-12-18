@@ -1,5 +1,7 @@
 <view class="box">
-  <van-cell title="请选择反馈类型" is-link arrow-direction="down" />
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <van-cell title="请选择反馈类型" is-link arrow-direction="down" value="{{index}}" />
+  </picker>
   <view style="height:20rpx">
   </view>
   <van-field
@@ -18,44 +20,8 @@
 </view>
 </view>
 <!--  弹框开始  -->
-<view class="tk-box">
-<view class="tk">
-    <view>
-        <view class="tk-top">
-          商品相关
-        </view>
-            <view class="tk-top-hx">
-            </view>
-        <view class="tk-top">
-          订单支付
-        </view>
-            <view class="tk-top-hx">
-            </view>
-        <view class="tk-top">
-         账户积分
-        </view>
-            <view class="tk-top-hx">
-            </view>
-        <view class="tk-top">
-          优惠活动
-        </view>
-            <view class="tk-top-hx">
-            </view>
-        <view class="tk-top">
-          产品建议
-        </view>
-            <view class="tk-top-hx">
-            </view>
-        <view class="tk-top">
-          其他
-        </view>
-        
-    </view>
-    
-</view>
-<view class="tk-bottom">
-        取消
-    </view>
+<view class="btn" >
+  <button bindtap="selectall" square class="col">提交</button>
 </view>
 
 

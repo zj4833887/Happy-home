@@ -2,80 +2,55 @@
 <image src="../../src/public/logo.png">
 </image>
 </view>
-<view class='topTabSwiper'>
-    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>我是用户</view>
-    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>我是商户</view>
-    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>我是服务人员</view>
-</view>
-<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
-  <swiper-item>
-      <view class='swiper_con'>
-         <view style="width=100%">
-         </view>
-      <view class="box">
-         <input placeholder="请输入手机号" >
-         </input>
+<van-tabs active="{{ active }}" bind:change="onChange"
+color="#FEB466" title-active-color="#FEB466"
+>
+  <van-tab title="我是用户">
+      <input class="loging" placeholder="请输入手机号">
+      </input>
+      <input class="loging" placeholder="请输入验证码">
+      </input>
+      <view class="hezi">
+      <button class="btn">获取验证码</button> 
       </view>
-    <view class="box">
-       <input placeholder="请输入验证码" >
-       </input>
-         <button class="login-btn">
-           获取验证码
-         </button>
-     </view>
-     <van-cell-group>
-        <view class="tips">未注册手机验证后自动登录</view>
-        <button class="btn">
-        登录
-        </button>
-      </van-cell-group>
+      
+      <view class="wz">
+      未注册手机验证后自动登录
       </view>
-  </swiper-item>
-  <swiper-item>
-      <view class='swiper_con'>
-         <view style="width=100%">
-         </view>
-      <view class="box">
-         <input placeholder="请输入手机号" >
-         </input>
+      <button class="butt" bindtap="next">
+      登录
+      </button>
+  </van-tab>
+  <van-tab title="我是商户">
+    <input class="loging" placeholder="请输入手机号"
+      type='number' maxlength="11" bindinput="inputgetName" data-name='login.username' value='{{login.username}}'
+      >
+      </input>
+      <input class="loging" placeholder="请输入密码"
+      type='number' maxlength="11" bindinput="inputgetName" data-name='login.password' value='{{login.password}}'
+      >
+      </input>
+      <view class="wz">
       </view>
-    <view class="box">
-       <input placeholder="请输入验证码" >
-       </input>
-         <button class="login-btn">
-           获取验证码
-         </button>
-     </view>
-     <van-cell-group>
-        <view class="tips">未注册手机验证后自动登录</view>
-        <button class="btn">
-        登录
-        </button>
-      </van-cell-group>
+      <button class="butt" bindtap="next">
+      登录
+      </button>
+  </van-tab>
+  <van-tab title="我是服务人员">
+     <input class="loging" placeholder="请输入手机号"
+     type='number' maxlength="11" bindinput="inputgetName" data-name='login.user' value='{{user}}'
+     >
+      </input>
+      <input class="loging" placeholder="请输入验证码"
+      type='number' maxlength="6" bindinput="inputgetName" data-name='login.pass' value='{{code}}'
+      >
+      </input>
+      <button class="bttn" bindtap="verification" >获取验证码</button> 
+      <view class="wz">
+      未注册手机验证后自动登录
       </view>
-  </swiper-item>
-  <swiper-item>
-      <view class='swiper_con'>
-         <view style="width=100%">
-         </view>
-      <view class="box">
-         <input placeholder="请输入手机号" >
-         </input>
-      </view>
-    <view class="box">
-       <input placeholder="请输入验证码" >
-       </input>
-         <button class="login-btn">
-           获取验证码
-         </button>
-     </view>
-     <van-cell-group>
-        <view class="tips">未注册手机验证后自动登录</view>
-        <button class="btn">
-        登录
-        </button>
-      </van-cell-group>
-      </view>
-  </swiper-item>
-</swiper>
-
+      <button class="butt" bindtap="service">
+      登录
+      </button>
+  </van-tab>
+</van-tabs>

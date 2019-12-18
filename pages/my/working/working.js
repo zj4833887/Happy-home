@@ -5,14 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    arr:[],
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var arr = wx.getStorageSync('arr');//wx.getStorageSync(key)，获取本地缓存
+    var a = '全职'
+    var b = '兼职'
+    var zhi = wx.getStorageSync('zhi');
+    if (zhi = 0) {
+      a = zhi
+    } else {
+      b = zhi
+    }
+    this.setData({
+      arr: arr
 
+    });
+    console.log(arr)
   },
 
   /**

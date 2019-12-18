@@ -9,5 +9,5 @@
   <van-cell title="当前版本" value="V1.0" class="current" />
   
   </view>
-  <van-button size="large" type="warning">退出登录</van-button>
+  <van-button size="large" type="warning" bindtap="exit" >退出登录</van-button>
 </view>

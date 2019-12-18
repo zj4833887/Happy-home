@@ -1,4 +1,4 @@
-<view style="width:100rpx;height:100rpx;background:red;" class="{{showView?'hide':'hide'}}">
-</view>
-<button bindtap="onChangeShowState">显示/隐藏view</button>
-<button bindtap="hide">显示/隐藏view</button>
+<view class='quan' bindtap='addTeamImage' >+</view>//定义添加图片的点击点。
+<image class="q-image" src="{{teamHeadUrl}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+<van-uploader file-list="{{ fileList }}" bind:after-read="addTeamImage" />
+

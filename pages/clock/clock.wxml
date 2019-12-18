@@ -1,0 +1,32 @@
+
+<view class="box">
+<image src="../../src/public/bjt.png"></image>
+</view>
+<view class="box">
+<navigator url="/pages/card/rule/rule" >
+      <view class="rule" >
+      打卡规则
+      </view>
+      </navigator>
+    <view class="card-box">
+        距离开始工作还剩余:<text style="color:red">2:00:00</text>
+    </view>
+    <button class='card-round'bindtap="onChangeShowState">
+   开始打卡
+    </button>
+    <button class="card-round down"bindtap="onChangeShowState">
+    结束工作
+    </button>
+</view>
+<!-- 弹出框 -->
+<view class="{{showView?'show':'hide'}}">
+<view class="box-Popup">
+    <view class="box-Popup-top">
+    打卡成功
+    </view>
+    <button class="box-Popup-bottom" bindtap="onChangeShowState">
+         确定
+    </button>
+</view>
+</view>
+<van-overlay show="{{ show }}" bind:click="onChangeShowState"/>

@@ -1,0 +1,93 @@
+.contact{
+  width:100%;
+  height:21rpx;
+  font-size:22rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+  margin: 30rpx 0 0 33rpx;
+}
+.contact-box{
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width:690rpx;
+  height:96rpx;
+  background:rgba(255,255,255,1);
+  border-radius:15rpx; 
+}
+.adder{
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width:690rpx;
+  height:236rpx;
+  background:rgba(255,255,255,1);
+  border-radius:15rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.adder-box{
+  width: 633rpx;
+  height: 84rpx;
+}
+.adder-bottom{
+  width: 633rpx;
+  height: 151rpx;
+  display: flex;
+  justify-content: center;
+}
+.van-cell__title{
+  width: 30rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+.van-cell__value{
+  width: 110rpx;
+  font-size:22rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+}
+.adder-left{
+  margin-left: 10rpx;
+  width: 172rpx;
+  height: 151rpx;
+}
+.adder-right{
+  width: 482rpx;
+  height: 100%;
+}
+.adder-left-wz{
+  margin-top: 53rpx;
+  width:111rpx;
+  height:27rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  margin-left: 28rpx;
+}
+.adder-right-wz{
+  margin-top: 47rpx;
+  width:100%;
+  height:21rpx;
+  font-size:22rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+  opacity:0.5;
+}
+/* 按钮 */
+.btn{
+  width:710rpx;
+  height:114rpx;
+  border-radius:15rpx;
+  margin: 0 auto;
+  margin-top: 120rpx
+}
+.col{
+  background: #FEB466;
+  color: #F6F6F6; 
+}

@@ -1,0 +1,70 @@
+<van-tabs active="{{ active }}" bind:change="onChange"
+color="#FEB466" title-active-color="#FEB466"
+>
+  <van-tab title="全部">
+    <view class="index-box">
+        <view class="index-box-top">
+        <image src="../../../src/public/banner.png"></image>
+        </view>
+        <view class="index-box-bottom">
+            <view class="index-box-bottom-left">
+            <image src="../../../src/public/logo.png"></image>
+            </view>
+            <view class="index-box-bottom-center">
+            乐居优家家政服务公司
+            </view>
+            <navigator url="../../my/see/see">
+            <button class="index-box-bottom-right"
+            bindTap="gotoPage">
+            查看商铺
+            </button> 
+            </navigator>
+        </view>
+    </view>
+  </van-tab>
+  <van-tab title="申请中">
+    <view class="index-box">
+        <view class="index-box-top">
+        <image src="../../../src/public/banner.png"></image>
+        </view>
+        <view class="index-box-bottom">
+            <view class="index-box-bottom-left">
+            <image src="../../../src/public/logo.png"></image>
+            </view>
+            <view class="index-box-bottom-center">
+            乐居优家家政服务公司
+            </view>
+            <button class="index-box-bottom-right">
+            查看商铺
+            </button> 
+            <!-- 角标 -->
+            <view class="audit">
+            审核中
+          </view>
+        </view>
+    </view>
+  </van-tab>
+  <van-tab title="申请未通过">
+    <view class="index-box">
+        <view class="index-box-top">
+        <image src="../../../src/public/banner.png"></image>
+        </view>
+        <view class="index-box-bottom">
+            <view class="index-box-bottom-left">
+            <image src="../../../src/public/logo.png"></image>
+            </view>
+            <view class="index-box-bottom-center">
+            乐居优家家政服务公司
+            </view>
+            <button class="index-box-bottom-right">
+            查看商铺
+            </button> 
+            <!-- 角标 -->
+            <view class="notpass">
+            审核未通过
+          </view>
+        </view>
+    </view>
+  </van-tab>
+</van-tabs>
+

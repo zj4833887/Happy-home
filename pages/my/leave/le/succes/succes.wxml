@@ -1,0 +1,6 @@
+<view class="box">
+<van-icon name="passed" class="icon" />
+</view>
+<view class="box-left">
+您的请假内容已经提交成功
+</view>

@@ -1,0 +1,91 @@
+page{
+  background: #F6F6F6;
+}
+.index-box{
+  width: 686rpx;
+  height: 432rpx;
+  background: #FFFFFF;
+  border-radius: 5%;
+  margin: 0 auto;
+  margin-top:30rpx;
+  display: flex;
+  flex-wrap:wrap;
+}
+.index-box-top{
+  width: 100%;
+  height: 333rpx;
+  float: left;
+}
+.index-box-top>image{
+  width: 100%;
+  height: 100%;
+}
+.index-box-bottom{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100rpx;
+}
+.index-box-bottom-left{
+  position: absolute;
+  left: 36rpx;
+  top: 24rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.index-box-bottom-left>image{
+  width: 100%;
+  height: 100%;
+}
+.index-box-bottom-center{
+  position: absolute;
+  left: 84rpx;
+  bottom: 40rpx;
+  width: 236rpx;
+  height: 23rpx;
+
+  font-size: 24rpx;
+  color: #494949;
+}
+.index-box-bottom-right{
+  position: absolute;
+  right: 24rpx;
+  bottom: 20rpx;
+  width: 165rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+  border-radius: 25rpx;
+  font-size: 24rpx;
+  color: #FEB466;
+  border: 1px solid #FEB466;
+}
+/* 角标 */
+.audit{
+  position: absolute;
+  left: 542rpx;
+  top: -331rpx;
+  width: 143rpx;
+  height: 61rpx;
+  background: #04D5B0;
+  border-radius: 10rpx;
+  float: right;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 61rpx;
+}
+.notpass{
+  position: absolute;
+  left: 497rpx;
+  top: -331rpx;
+  width: 189rpx;
+  height: 53rpx;
+  background: #D50404;
+  border-radius: 10rpx;
+  float: right;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 53rpx;
+}

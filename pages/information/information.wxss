@@ -35,3 +35,18 @@ page{
   color: #777777;
   margin-bottom: 44rpx;
 }
+/* 弹框开始 */
+.section__title {
+  margin: 20rpx;
+}
+
+.section {
+  width: 100%;
+  font-size: 35rpx;
+  margin: 10rpx;
+  color: #000;
+}
+
+.picker {
+  color: #6BD44E;
+}

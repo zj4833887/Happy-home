@@ -4,10 +4,12 @@
       <view class="box-top-left">
         我的工时
       </view>
+      <navigator url="./myworking/myworking">
       <view class="box-top-right">
         <image src="../../../src/public/9.png">
         </image>
       </view>
+      </navigator>
   </view>
   </view>
     <view class="box-bottom">
@@ -16,12 +18,12 @@
         <text class="nature">全职</text>
         </view>
         <view class="box-bottom-top">
-        工作周期：<text class="nature"> 周一、周二、周三、周四、周五、周六、周日</text>
+        工作周期：<text class="nature"> {{arr}}</text>
         </view>
         <view class="box-bottom-top">
          工作时间：                    
         <text class="nature"> 8:11-16:00</text>
         </view>
     </view>
-  
 </view>
+

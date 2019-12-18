@@ -22,7 +22,7 @@ page{
   height: 349rpx;
 }
 .index-box-left{
-  width: 248rpx;
+  width: 60%;
   height: 23rpx;
   margin: 30rpx 0 0 30rpx;
   font-size: 24rpx;
@@ -89,7 +89,7 @@ page{
   float: left;
 }
 .name{
-  width: 223rpx;
+  width: 280rpx;
   height: 21rpx;
   margin-left: 29rpx;
   float: left;
@@ -108,7 +108,7 @@ page{
   margin-top: 13rpx;
 }
 .index-bottom-bottom-left{
-  width: 140rpx;
+  width: 60%;
   height: 100%;
   font-size: 24rpx;
   line-height: 60rpx;

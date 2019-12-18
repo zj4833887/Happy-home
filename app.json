@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/index/index",
     "pages/my/show/show",
     "pages/my/feedback/feedback",
     "pages/my/setup/setup",
@@ -10,13 +12,26 @@
     "pages/adopt/adopt",
     "pages/authentication/authentication",
     "pages/unclaimed/unclaimed",
-    "pages/login/login",
     "pages/details/details",
-    "pages/index/index",
     "pages/my/about/about",
     "pages/my/working/working",
     "pages/my/working/cycle/cycle",
-    "pages/my/working/myworking/myworking"
+    "pages/my/working/myworking/myworking",
+    "pages/apply/apply/apply",
+    "pages/my/my/my",
+    "pages/my/see/see",
+    "pages/my/homepage/homepage",
+    "pages/my/contact/contact",
+    "pages/my/profile/profile",
+    "pages/my/major/major",
+    "pages/my/book/book",
+    "pages/my/leave/leave",
+    "pages/my/leave/apply/apply",
+    "pages/my/leave/le/le",
+    "pages/my/leave/le/succes/succes",
+    "pages/my/make/make",
+    "pages/clock/clock",
+    "pages/ceshi/ceshi"
   ],
   "usingComponents": {
     "van-field": "/@vant/weapp/field/index",
@@ -30,7 +45,14 @@
     "van-toast": "/@vant/weapp/toast/index",
     "van-dialog": "/@vant/weapp/dialog/index",
     "van-checkbox": "/@vant/weapp/checkbox/index",
-    "van-checkbox-group": "/@vant/weapp/checkbox-group/index"
+    "van-checkbox-group": "/@vant/weapp/checkbox-group/index",
+    "van-overlay": "/@vant/weapp/overlay/index",
+    "van-rate": "/@vant/weapp/rate/index",
+    "van-uploader": "/@vant/weapp/uploader/index",
+    "van-area": "/@vant/weapp/area/index",
+    "van-icon": "/@vant/weapp/icon/index",
+    "van-datetime-picker": "/@vant/weapp/datetime-picker/index",
+    "calendar": "/pages/com/calendar/index"
   },
   "window": {
     "backgroundTextStyle": "light",
@@ -45,16 +67,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "接单",
-        "iconPath": "src/public/Receipt.png",
-        "selectedIconPath": "src/public/Receipt.png"
+        "iconPath": "src/public/jiedan1.png",
+        "selectedIconPath": "src/public/jiedan2.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "打卡"
+        "pagePath": "pages/clock/clock",
+        "text": "打卡",
+        "iconPath": "src/public/card.png",
+        "selectedIconPath": "src/public/card2.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "我的"
+        "pagePath": "pages/my/my/my",
+        "text": "我的",
+        "iconPath": "src/public/my.png",
+        "selectedIconPath": "src/public/my2.png"
       }
     ]
   },

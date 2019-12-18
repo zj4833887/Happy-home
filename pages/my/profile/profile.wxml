@@ -1,0 +1,86 @@
+<view class="contact">
+  请填写手机号码
+</view>
+<view class="bigbox">
+  <van-cell-group>
+   <van-field
+    label="身高"
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+   <van-field
+    label="体重"
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <van-cell title="血型" is-link value="{{array[index]}}" />
+   </picker>
+   <picker bindchange="character" value="{{character}}" range="{{character}}">
+  <van-cell title="性格" is-link value="{{character[a]}}" />
+   </picker>
+   <van-field
+    label="子女"
+    value="{{ value }}"
+    placeholder="请输入子女个数"
+    border="{{ false }}"
+    bind:change="onChange"
+    input-align="right"
+  />
+  <van-field
+    label="居家型"
+    value="{{ value }}"
+    placeholder="请输入是否住家"
+    border="{{ false }}"
+    bind:change="onChange"
+    input-align="right"
+  />
+  <picker bindchange="religion" value="{{index}}" range="{{religion}}">
+  <van-cell title="宗教信仰" is-link value="{{religion[b]}}" />
+  </picker>
+   
+  <van-field
+    label="擅长菜系"
+    value="{{ value }}"
+    placeholder="请输入擅长菜系"
+    border="{{ false }}"
+    bind:change="onChange"
+    input-align="right"
+  />
+ 
+<picker bindchange="cuisine" value="{{index}}" range="{{cuisine}}">
+  <van-cell title="婚姻状况" is-link value="{{cuisine[c]}}" /> </picker>
+  <picker bindchange="language" value="{{index}}" range="{{language}}">
+  <van-cell title="语言能力" is-link value="{{language[index]}}" />
+  </picker>
+  <picker bindchange="culture" value="{{index}}" range="{{culture}}">
+  <van-cell title="文化程度" is-link value="{{culture[d]}}" />
+  </picker>
+ <van-field
+    label="服务项目"
+    value="{{ value }}"
+    placeholder="请输入服务项目"
+    border="{{ false }}"
+    bind:change="onChange"
+    input-align="right"
+  />
+   <van-field
+     label="服务价格"
+    value="{{ value }}"
+    placeholder="请输入服务价格"
+    border="{{ false }}"
+    bind:change="onChange"
+    input-align="right"
+  />
+</van-cell-group>
+</view>
+<!-- <view style="height:80rpx;width:100%;">
+</view> -->
+<view class="btn" >
+  <button bindtap="selectall" square class="col">保存</button>
+</view>
+

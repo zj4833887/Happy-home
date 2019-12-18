@@ -3,7 +3,7 @@
         北京乐居优家家政服务公司
     </view>
     <view class="card-time">
-    上班时间：8:00
+    上班时间：{{time}}
     </view>
     <button class='card-round'bindtap="onChangeShowState">
     上班打卡
@@ -21,7 +21,7 @@
     <view class="box-Popup-top">
     打卡成功
     </view>
-    <button class="box-Popup-bottom" bindtap="onChange">
+    <button class="box-Popup-bottom" bindtap="onChangeShowState">
          确定
     </button>
 </view>

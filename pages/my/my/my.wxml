@@ -1,0 +1,71 @@
+<view class="box">
+<image src="../../../src/my/round.png">
+</image>
+    <navigator url="../homepage/homepage">
+    <view class="box-left">
+    <image src="../../../src/my/people.png"></image>
+    </view>
+    </navigator>
+        <view class="box-center">
+        {{name}}
+        </view>
+        <view class="box-right" >
+        <navigator url="/pages/apply/apply/apply">
+        申请加入公司
+        </navigator>
+        </view>
+</view>
+<view class="center">
+    <view class="center-box">
+    <navigator url="../../entry/entry">
+        <view class="center-top">
+            <image src="../../../src/my/xianyoujianli-2.png">
+            </image>
+        </view>
+        <view class="center-left">
+        简历
+        </view>
+        </navigator>
+    </view>
+    <view class="center-box">
+    <navigator url="../../my/leave/leave">
+        <view class="center-top">
+        <image src="../../../src/my/qingjia.png">
+            </image>
+        </view>
+        <view class="center-left">
+        请假
+        </view>
+      </navigator>
+    </view>
+    <view class="center-box">
+    <navigator url="/pages/my/working/working">
+        <view class="center-top">
+        <image src="../../../src/my/host.png">
+            </image>
+        </view>
+        <view class="center-left">
+        工时
+        </view>
+         </navigator>
+    </view>
+</view>
+<view>
+      <view class="bottom">
+          <van-cell title="预约列表" is-link 
+          url="/pages/my/make/make"
+            />
+          <van-cell
+           title="考勤打卡" is-link
+          url="/pages/card/card"
+            />
+          <van-cell title="联系我们" value="400-646-9168" />
+          <van-cell title="关于我们" is-link 
+          url="/pages/my/about/about"
+          />
+          <van-cell title="意见反馈" is-link value="欢迎反馈使用中遇到的问题" url="/pages/my/feedback/feedback"/>
+          <van-cell title="设置" is-link
+         url="/pages/my/setup/setup" 
+           />
+      </view>
+</view>
