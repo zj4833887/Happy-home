@@ -1,0 +1,109 @@
+<!--pages/devicebymall/detail/detail.wxml-->
+<view class="detailPage">
+  <view class='avatarWrap'>
+    <!-- <image src='../../../assets/images/avatar_on.png'></image> -->
+    <view class='avatarOff' wx:if='{{detailData.robot_status == 20}}'>离线</view>
+    <view class='avatarOn' wx:if='{{detailData.robot_status != 20}}'>在线</view>
+    <view class='avatarText'>
+      <view class='userName view_flex'>
+        <label>SN: {{detailData.device_sn}}</label>
+        <button form-type='submit' id='btnCopy' class='btnCopy' hover-class='btn_hover' bindtap="copyLink">复制SN</button>
+      </view>
+      <view class='userName view_flex'>
+        <label wx:if="{{detailData.password!=''}}">密码:{{detailData.password}} </label>
+         <button form-type='submit' id='btnCopy' class='btnCopy psd_error' hover-class='btn_hover' bindtap="getNewPassword">密码不对？</button>
+      </view>
+      <view class='userName'>
+        <label class='itemName' wx-if="{{detailData.operator_name.length!=''}}">运维名:{{detailData.operator_name}} </label>
+        <label class='itemName' wx:if="{{detailData.device_type!=''}}">类型:{{detailData.device_type}} </label>
+        <label class='itemName' wx:if="{{detailData.manager_name!=''}}">负责人:{{detailData.manager_name}} </label>
+        <label class='itemName' wx:if="{{detailData.manager_phone!=''}}" bindtap="makePhone" data-phone="{{detailData.manager_phone}}">电话:{{detailData.manager_phone}} </label>
+        
+      </view>
+    </view>
+  </view>
+
+  <view class='clientInfo'>
+    <view class='section'>
+      <text class='text'>版本号:</text>
+      <view class='item'>
+        {{detailData.client_version}}
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text'>设备名称:</text>
+      <view class='item' style="width: 80%;">
+        <!-- <input name='clientName' value='{{valueClientName}}' bindconfirm="bindNameChange" style="border: 1px solid #ddd;padding: 5rpx 10rpx;margin: 0 10rpx;" wx:if="{{detailData.edit_power!=0 && detailData.front_operation==0}}" />
+        <label wx:if="{{detailData.edit_power==0 || detailData.front_operation==1}}">{{valueClientName}}</label> -->
+        <label bindtap="clickNameChange" style="display:block">{{valueClientName}} ></label>
+        <!-- <label style="color:#d85e4a">*楼层-设施-店铺旁，点击可进入编辑</label> -->
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text'>设备楼层:</text>
+      <view class='item'>
+        <picker bindchange="bindFloorChange" value="{{valueClientFloor}}" range="{{floorDataSource}}" range-key="floor_name" disabled="{{detailData.edit_power==0}}">
+          <view class="picker">
+            {{floorDataSource[valueClientFloor].floor_name}} >
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text'>设备属性:</text>
+      <view class='item'>
+        <picker bindchange="bindTypeChange" value="{{valueClientType}}" range="{{typeDataSource}}" range-key="name" disabled="{{detailData.edit_power==0 || (detailData.front_operation==0 && detailData.client_type==4)}}">
+          <view class="picker">
+            {{typeDataSource[valueClientType].name}} >
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text'>运营商:</text>
+      <view class='item'>
+        <picker bindchange="bindOperatorChange" value="{{valueClientOperator}}" range="{{operatorDataSource}}" disabled="{{detailData.edit_power==0}}">
+          <view class="picker">
+            {{operatorDataSource[valueClientOperator]}} >
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text'>Iccid:</text>
+      <view class='item' style='width: 100%;'>
+        <uploadView mode="single" count="1" uploadedSingleImg='{{valueClientIccid}}' id="upload" bindcallback="imgCallback" binddelcallback="imgDelCallback" onlyPic="true" noDel="{{detailData.edit_power==0}}" wx:if="{{detailData.client_id}}"></uploadView>
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text lang_text'>蜂鸟地图朝向:</text>
+      <view class='item edit_item'>
+        <text wx:if="{{!editAngleFlag}}" class="item_value">{{rotateAngle}}</text>
+        <input wx:if="{{editAngleFlag}}" class="edit_input" placeholder="蜂鸟地图朝向" data-type="angle" value="{{rotateAngle}}" focus="{{inputFocus('angle')}}" bindinput="getInputValue"/>
+        <label wx:if="{{!editAngleFlag && detailData.edit_power!=0}}" class="ope_link edit_link" data-type="angle" bindtap="edit">编辑</label>
+        <label wx:if="{{editAngleFlag}}" class="ope_link confirm_edit_link" data-type="angle" bindtap="confirmEdit">确定</label>
+        <label wx:if="{{editAngleFlag}}" class="ope_link edit_link cancel_link" data-type="angle" bindtap="cancelEdit">取消</label>
+      </view>
+    </view>
+    <view class='section'>
+      <text class='text lang_text'>蜂鸟地图大小:</text>
+      <view class='item edit_item'>
+        <text wx:if="{{!editMapSizeFlag}}" class="item_value">{{mapSize}}</text>
+        <input wx:if="{{editMapSizeFlag}}" class="edit_input" placeholder="蜂鸟地图大小" data-type="mapSize"  value="{{mapSize}}" focus="{{inputFocus('mapSize')}}" bindinput="getInputValue"/>
+        
+        <label wx:if="{{!editMapSizeFlag && detailData.edit_power!=0}}" class="ope_link edit_link" data-type="mapSize" bindtap="edit">编辑</label>
+        <label wx:if="{{editMapSizeFlag}}" class="ope_link confirm_edit_link" data-type="mapSize" bindtap="confirmEdit">确定</label>
+        <label wx:if="{{editMapSizeFlag}}" class="ope_link edit_link cancel_link" data-type="mapSize" bindtap="cancelEdit">取消</label>
+      </view>
+    </view>
+
+    <view class="section" wx:if="{{isMsgDetail == true}}">
+      <view class="item">
+        <button form-type='submit' id='btnBack' class='btnBack' hover-class='btn_hover' bindtap="backLink">返回首页</button>
+      </view>
+    </view>
+
+  </view>
+  
+
+</view>

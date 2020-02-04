@@ -1,0 +1,99 @@
+ <van-cell title="报警内容" value="离线" label="北京朝阳大悦城" border="{{ false }}" />
+ <van-cell title="设备位置" value="一层楼梯口" />
+ <van-cell title="设备sn" value="123456789987" />
+ <van-cell title="开始时间" value="01-02 10:00" />
+  <van-cell title="持续时间" value="01-02 10:00" />
+ <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <van-cell title="是否提交问题反馈" value="{{array[index]}}" is-link />
+  </picker>
+    <!-- -----------------------------------------------------否----- -->
+<view wx:if="{{display>0}}">
+  <view>
+   <picker bindchange="reason" value="{{item}}" range="{{rea}}">
+        <van-cell title="离线原因确认" value="{{rea[item]}}" />
+  </picker>
+  </view>
+<van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="解决办法"
+    type="textarea"
+    placeholder="请输入解决办法"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+<!-- ------------------------------------上传图片--------------------------------------------- -->
+<view class="wen">
+问题汇报
+</view>
+<view class="conts">
+  <view class="img_box">
+    <view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+      <image src='{{item}}' bindlongpress="deleteImage" bindtap="listenerButtonPreviewImage" data-index="{{index}}" mode='widthFix' />
+    </view>
+    <view class="imgs">
+      <view class="images" bindtap="upload">
+        <image src='/src/public/jia.png' mode='widthFix' />
+      </view>
+    </view>
+  </view>
+
+  <view class="upload-img">上传图片</view>
+</view>
+<!-- -----------------------------------------提交 -->
+<view class="btn" bindtap="submission">
+<van-button type="primary">提交</van-button>
+</view>
+</view>
+   <!-- -----------------------------------------------------是------------------------------------------- -->
+   <view wx:if="{{display<1}}">
+   <picker bindchange="two" value="{{index}}" range="{{two}}">
+  <van-cell title="二级故障" value="{{two[twodata]}}" is-link/>
+  </picker>
+   <picker bindchange="three" value="{{index}}" range="{{three}}">
+  <van-cell title="三级故障" value="{{three[threedata]}}"is-link />
+  </picker>
+  <van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="问题描述"
+    type="textarea"
+    placeholder="请输入问题描述"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+<picker bindchange="Solve" value="{{index}}" range="{{Solve}}">
+  <van-cell title="是否解决" value="{{Solve[solvedata]}}"is-link />
+  </picker>
+  <van-field
+    value="{{ message }}"
+    label="解决办法"
+    type="textarea"
+    placeholder="请输入解决办法"
+    autosize
+    border="{{ false }}"
+  />
+  <!-- ------------------------------------------------------图片上传------------- -->
+  <view class="wen">
+问题汇报
+</view>
+<view class="conts">
+  <view class="img_box">
+    <view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+      <image src='{{item}}' bindlongpress="deleteImage" bindtap="listenerButtonPreviewImage" data-index="{{index}}" mode='widthFix' />
+    </view>
+    <view class="imgs">
+      <view class="images" bindtap="upload">
+        <image src='/src/public/jia.png' mode='widthFix' />
+      </view>
+    </view>
+  </view>
+  <view class="upload-img">上传图片</view>
+</view>
+<!-- -----------------------------------------提交 ------------------------------------------------>
+<view class="btn" bindtap="submission">
+<van-button type="primary">提交</van-button>
+</view>
+</view>

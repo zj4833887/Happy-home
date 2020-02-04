@@ -1,4 +1,0 @@
-<view class="box">
-<van-cell title="我的申请" url="./apply/apply" is-link   />
-<van-cell title="请假" url="./le/le" is-link  />
-</view>

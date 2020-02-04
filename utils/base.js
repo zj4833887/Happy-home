@@ -1,3 +1,3 @@
-const HOSTNAME = 'http://192.168.0.120:8093/merchant/'
+const HOSTNAME = 'https://aioperation.cmcm.com/v1/api/robot/'
 const IMGHOSTNAME = 'http://localhost'
 export { HOSTNAME, IMGHOSTNAME };

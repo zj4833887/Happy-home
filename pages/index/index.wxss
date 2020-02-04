@@ -1,173 +1,109 @@
-page{
-  background: #F6F6F6;
-}
-.index-box{
-  width: 686rpx;
-  height: 432rpx;
-  background: #FFFFFF;
-  border-radius: 5%;
-  margin: 0 auto;
-  margin-top:30rpx;
+.box{
+  width: 100%;
+  height: 50rpx;
+  background: #ffffff;
   display: flex;
-  flex-wrap:wrap;
+  justify-content: flex-end;
 }
-.index-top{
+.top-box{
+ width: 20%;
+ height: 100%;
+ text-align: center;
+ font-size: 30rpx;
+ line-height: 50rpx;
+}
+.top-left-box{
+   width: 14.2%;
+  background: #ffffff;
+  float: left;
+  overflow: hidden;
+}
+.topbox{
+   width: 21.5%;
+   height: 100%;
+   text-align: center;
+   font-size: 30rpx;
+   line-height: 50rpx;
+   /* border: 1rpx solid #000000; */
+}
+.left-box{
+  /* height: 200rpx; */
+  width: 20%;
+  background:#ffffff;
+  float: left;
+}
+.top-left{
+  height: 113rpx;
   width: 100%;
-  height: 82rpx;
-  border-radius: 5%;
-  border-bottom:2px solid #EEEEEE
+  background: #ffffff;
+  text-align: center;
+  line-height: 113rpx;
+  font-size: 30rpx;
+  /* border: 1rpx solid #000000; */
 }
-.index-bottom{
+.left{
   width: 100%;
-  height: 349rpx;
-}
-.index-box-left{
-  width: 60%;
-  height: 23rpx;
-  margin: 30rpx 0 0 30rpx;
-  font-size: 24rpx;
-  color: #777777;
-  float: left;
-}
-.index-box-right{
-  width: 214rpx;
-  height: 23rpx;
-  float:right;
-  margin: 30rpx 30rpx 0 0 ;
-  font-size: 24rpx;
-  color: #777777;
-}
-.index-bottom-top{
-  width: 314rpx;
-  height: 21rpx;
-  margin: 19rpx 0 0 30rpx;
-  font-size: 22rpx;
-  color: #FEB466;
-}
-.index-bottom-center{
-  width: 626rpx;
-  margin: 0 auto;
-  margin-top: 30rpx;
-}
-.circular{
-  width: 16rpx;
-  height: 16rpx;
-  border-radius: 100%;
-  background: red;
-  float: left;
-}
-.index-bottom-center-address{
-  width: 439rpx;
-  height: 53rpx;
-  margin-left: 29rpx;
-  font-size: 22rpx;
-  color: #333333;
-  float: left;
-}
-.index-bottom-center-right{
-  width: 80rpx;
-  height: 26rpx;
-  float: right;
-  font-size: 26rpx;
-  line-height: 46rpx;
-  color: #DD0B0B;
-}
-.index-bottom-center-right-img{
-  width: 33rpx;
-  height: 33rpx;
-  float: right;
-}
-.index-bottom-center-right-img>image{
-  width: 100%;
-  height: 100%;
-}
-.green{
-  width: 16rpx;
-  height: 16rpx;
-  border-radius: 100%;
-  background: #0BDD78;
-  float: left;
-}
-.name{
-  width: 280rpx;
-  height: 21rpx;
-  margin-left: 29rpx;
-  float: left;
-  font-size: 22rpx;
-}
-/* 备注开始 */
-.Remarks{
-   width: 306rpx;
-   height: 20rpx;
-   font-size: 20rpx;
-   color: #777777;
-}
-.index-bottom-bottom{
-  width: 100%;
-  height: 60rpx;
-  margin-top: 13rpx;
-}
-.index-bottom-bottom-left{
-  width: 60%;
-  height: 100%;
-  font-size: 24rpx;
-  line-height: 60rpx;
-  float: left;
-}
-.index-bottom-bottom-right{
-  width: 150rpx;
-  height: 60rpx;
-  border-radius: 30rpx;
-  background: #FFFFFF;
-  float: right;
-  font-size: 20rpx;
-  color: #FEB466;
-  border: 1px solid #FEB466;
-}
-/* 弹框开始 */
-.frame{
-  position: absolute;
-  bottom: 129rpx;
-  left: 20rpx;
-  margin: 0 auto;
-   width: 710rpx;
-   height: 231rpx;
-   background: #EBEBEB;
-   border-radius: 5%;
-}
-.cancel{
-  position: absolute;
-  bottom: 0rpx;
-  left: 20rpx;
-  width: 710rpx;
   height: 114rpx;
-  background: rgb(255, 254, 254);
-  border-radius: 20rpx;
-}
-.frame-top{
-  width: 100%;
-  height: 115rpx;
-  border-bottom: 1rpx solid #DCDCDE;
   text-align: center;
-  line-height: 115rpx;
-  color: #666666;
+  line-height: 114rpx;
+  font-size: 25rpx;
 }
-.frame-bottom{
-  width: 100%;
-  height: 115rpx;
-  text-align: center;
-  line-height: 115rpx;
-  color: #666666;
+/* -------------底部开始-------------- */
+
+/* -----------------设备入住子盒子---------------- */
+.child-box{
+  width: 85.8%;
+  height: 677rpx;
+  float: right;
+  display: flex;
+  justify-content: center;
 }
-.cancel{
-  text-align: center;
-  line-height: 115rpx;
-  color: #0076FF;
+.child-box-left{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
-.hide{
-  display:block;
+.device{
+   width: 100%;
+   height: 113rpx;
+   background:#f0f9eb;
+   text-align: center;
+   line-height: 113rpx;
+}
+.picker-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.before{
+  width: 20%;
+  height: 100%;
+  background: #ffffff;
+}
+.picker{
+  width: 300rpx;
+  height: 100%;
+  background: #f0f9eb;
 }
 
-.show{
-  display: none;
+.center-box{
+  width:602rpx;
+  height: 100%;
+  float: left;
+}
+.list-box{
+  width:602rpx;
+  height: 114rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.center-box-first{
+  width: 25%;
+  height: 114rpx;
+  text-align: center;
+  line-height: 114rpx;
+  background: #f0f9eb;
 }

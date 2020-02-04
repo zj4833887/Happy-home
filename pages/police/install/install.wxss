@@ -1,0 +1,14 @@
+.tel-box{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 1rpx solid #000000;
+}
+.radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}

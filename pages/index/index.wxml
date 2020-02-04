@@ -1,159 +1,83 @@
-<van-tabs active="{{ active }}" bind:change="onChange"
-color="#FEB466" title-active-color="#FEB466"
->
-  <van-tab title="待服务">
-
-
-  <view class="index-box" wx:for="{{service}}" wx:key="service*this">
-  <view class="index-top">
-      <view class="index-box-left">
-      订单号：{{item.ddbh}}
-      </view>
-      <view class="index-box-right">
-      服务项目：{{item.fulx}}
-      </view>
+<view class="index-box">
+  <view class="picker-box">
+  <view class="before" bindtap="reduce">
+  前一天
   </view>
-  <view class="index-bottom">
-      <view class="index-bottom-top">
-      预约时间：{{item.staTime}}
-      </view>
-      <view class="index-bottom-center">
-        <view style="width:100%;height:100rpx;">
-            <view class="circular">
-            </view>
-            <view class="index-bottom-center-address">
-            服务地址：{{item.pddz}}            
-            </view>
-            <view class="index-bottom-center-right-img">
-            <image src="../../src/index/10.png">
-            </image>
-            </view>
-            <view class="index-bottom-center-right">
-            去这里
-            </view>
-  </view>
-        <!-- 绿点开始 -->
-        <view style="width:100%;height:74rpx;">
-            <view class="green" >
-            </view>
-            <view class="name">
-             {{item.lxr}}：{{item.lxdh}}
-            </view>
-        </view>
-        <view class="Remarks">
-        备注：{{item.demand_remark}}
-        </view>
-        <view class="index-bottom-bottom">
-        <view class="index-bottom-bottom-left">
-        合计：
-        <text style="color:red; font-size: 26rpx;">¥{{item.zj}}</text>
-        </view>
-      <button bindtap="onChangeShowState"   class="index-bottom-bottom-right"  >
-      立即沟通
-      </button>
-        </view>
-      </view>
+  <view class="section">
+  <picker mode="date" value="{{date}}" start="2019-12-01" end="2021-12-01" bindchange="bindDateChange">
+    <view class="picker">
+   {{date}}
     </view>
+      </picker>
   </view>
-  </van-tab>
-  <van-tab title="进行中">
-    <view class="index-box" wx:for="{{have}}" wx:key="*this">
-      <view class="index-top">
-      <view class="index-box-left">
-      订单号：{{item.ddbh}}
-      </view>
-      <view class="index-box-right">
-      服务项目：{{item.fulx}}
-      </view>
-    </view>
-      <view class="index-bottom">
-      <view class="index-bottom-top">
-      预约时间：{{item.staTime}}
-      </view>
-      <view class="index-bottom-center">
-        <view style="width:100%;height:100rpx;">
-            <view class="circular">
-            </view>
-            <view class="index-bottom-center-address">
-            服务地址：{{item.pddz}}            
-            </view>
+    <view class="before" bindtap="plus">
+  后一天
   </view>
-        <!-- 绿点开始 -->
-        <view style="width:100%;height:74rpx;">
-            <view class="green" >
-            </view>
-            <view class="name">
-            {{item.lxr}}：{{item.lxdh}}
-            </view>
-        </view>
-        <view class="Remarks">
-        备注：{{item.demand_remark}}
-        </view>
-        <view class="index-bottom-bottom">
-        <view class="index-bottom-bottom-left">
-        合计：
-        <text style="color:red; font-size: 26rpx;">¥{{item.zj}}  </text>
-        </view>
-        </view>
-      </view>
-    </view>
+  
+</view>
+</view>
+<van-divider contentPosition="center">设备入驻</van-divider>
+<view>
+<view class="box">
+  <view class="topbox" wx:for="{{dat}}" wx:key="item">
+  {{item.data}}
   </view>
-  </van-tab>
-  <van-tab title="已完成">
-    <view class="index-box" wx:for="{{completed}}" wx:key="completed*this">
-      <view class="index-top">
-      <view class="index-box-left">
-      订单号：{{item.ddbh}}
+</view>
+<view class="top-left-box">
+ <view class="top-left" wx:for="{{array}}" wx:key="item">
+  {{item.message}}
+</view>
+</view>
+<view class="child-box">
+    <view class="child-box-left" wx:for="{{data}}"  wx:key="item">
+      <view class="device"  bindtap="jump">
+      {{item.city_count}}
       </view>
-      <view class="index-box-right">
-      服务项目：{{item.fulx}}
+      <view class="device"  bindtap="jump">
+       {{item.mall_count}}
       </view>
-    </view>
-      <view class="index-bottom">
-      <view class="index-bottom-top">
-      完成时间：{{item.endTime}}
+      <view class="device"  bindtap="jump">
+       {{item.client_count}}
       </view>
-      <view class="index-bottom-center">
-        <view style="width:100%;height:100rpx;">
-            <view class="circular">
-            </view>
-            <view class="index-bottom-center-address">
-            服务地址：{{item.pddz}}           
-            </view>
-  </view>
-        <!-- 绿点开始 -->
-        <view style="width:100%;height:74rpx;">
-            <view class="green" >
-            </view>
-            <view class="name">
-             {{item.lxr}}：{{item.lxdh}}
-            </view>
-        </view>
-        <view class="Remarks">
-        备注：{{item.demand_remark}}
-        </view>
-        <view class="index-bottom-bottom">
-        <view class="index-bottom-bottom-left">
-        合计：
-        <text style="color:red; font-size: 26rpx;">¥{{item.zj}}</text>
-        </view>
-        </view>
+      <view class="device"  bindtap="jump">
+       {{item.client_enter_count}}
       </view>
-    </view>
-  </view>
-  </van-tab>
-</van-tabs>
-<!-- 弹框开始 -->
-<view class="frame-box" class="{{showView?'show':'hide'}}" >
-<view class="frame">
-    <view class="frame-top">
-    音频
-    </view>
-    <view class="frame-bottom">
-    视频
+      <view class="device"  bindtap="jump">
+       {{item.client_stay_count}}
+      </view>
+      <view class="device"  bindtap="jump">
+       {{item.flag}}
+      </view>
     </view>
 </view>
-<view class="cancel" bindtap="onChangeShowState" >
-取消
 </view>
+<view style="width:600rpx;height:700rpx;">
+</view>
+<!-- -----------------------------------------今日总览-------------------------------------- -->
+<van-divider contentPosition="center">今日总览</van-divider>
+<view class="box">
+  <view class="top-box" wx:for="{{situation}}"  wx:key="item">
+  {{item.message}}
+  </view>
+</view>
+<view class="left-box">
+ <view class="left" wx:for="{{task}}" wx:key="item">
+  {{item.data}}
+</view>
+</view>
+<view class="center-box">
+  <view class="list-box" wx:for="{{7}}" wx:key="item">
+     <view class="center-box-first">
+     {{item}}
+     </view>
+     <view class="center-box-first">
+     {{item}}
+     </view>
+     <view class="center-box-first">
+     {{item}}
+     </view>
+     <view class="center-box-first">
+     {{item}}
+     </view>
+  </view>
 </view>

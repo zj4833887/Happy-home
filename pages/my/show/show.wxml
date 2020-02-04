@@ -1,4 +1,0 @@
-<view class='quan' bindtap='addTeamImage' >+</view>//定义添加图片的点击点。
-<image class="q-image" src="{{teamHeadUrl}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
-<van-uploader file-list="{{ fileList }}" bind:after-read="addTeamImage" />
-

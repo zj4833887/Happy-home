@@ -1,0 +1,55 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+<!-- ----------------------------------未完成--------------------------------------------- -->
+  <van-tab title="未完成">
+  <view wx:for="{{6}}" wx:key="item">
+    <view class="no-box"> 
+      <view class="no-box-hz">
+          <view class="no-box-hz-left">
+              <view class="top-left">15:33</view>
+          </view>
+          <view class="no-box-hz-center">
+              <view class="center-left" bindtap="next">
+              XXXX商场-------------XXXX设备有问题
+              </view>
+          </view>
+          <view class="no-box-hz-right">
+              <view class="right-round">
+                  紧急
+              </view>
+          </view>
+      </view>
+    </view>
+  </view>
+  
+  
+  </van-tab>
+  <!-- ----------------------------------已完成--------------------------------------------- -->
+  <van-tab title="已完成">已完成</van-tab>
+</van-tabs>
+<!-- <view class="box">
+<view class="bigbox">
+    <view class="box-top">
+     <text>[离线报警]</text>
+    <view class="see">点击查看></view>
+    </view>
+    <view class="kong">
+    </view>
+      <view class="box-top">
+     <text>店铺位置</text>
+    <view class="see">店铺名字</view>
+    </view>
+    <view class="kong">
+    </view>
+    <view class="box-top">
+     <text>时间</text>
+    </view>
+    <view class="box-bottom">
+        <view class="round">
+        </view>
+        <view class="box-bottom-wz">
+         未查看
+        </view>
+        
+    </view>
+ </view>
+</view> -->

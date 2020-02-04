@@ -1,76 +1,16 @@
-page{
-  background: #ffffff;
-}
-.logo{
-  width: 98rpx;
-  height: 99rpx;
-  margin: 0 auto;
-  border-radius: 10%;
-  margin-top: 66rpx;
-  margin-bottom: 99rpx;
-}
-.logo>image{
+.box{
+  margin-top: 280rpx;
   width: 100%;
   height: 100%;
+  background: salmon;
+  margin: 0 auto；
 }
-.loging{
-  width:561rpx;
-  height:88rpx;
-  background:rgba(248,248,248,1);
-  border:1rpx solid rgba(238, 238, 238, 1);
-  margin-left: 92rpx;
-  margin-top: 61rpx;
-  border-radius: 50rpx;
-  padding-left:20px
+.kb{
+  width: 100%;
+  height: 100rpx;
 }
 .btn{
-  position: absolute;
-  left: 481rpx;
-  top: 224rpx;
-  width: 188rpx;
-  height: 65rpx;
-  background: #F8F8F8;
-  z-index: 999;
-  border: 1rpx solid #38537E;
-  font-size:24rpx;
-font-family:PingFang SC;
-font-weight:500;
-color:rgba(70,38,1,1);
-}
-.wz{
-  width:286rpx;
-height:28rpx;
-font-size:24rpx;
-font-family:PingFang SC;
-font-weight:400;
-color:rgba(0,194,229,1);
-margin-top: 17rpx;
-margin-left: 112rpx;
-margin-bottom: 48rpx;
-}
-.butt{
-  width:561rpx;
-  height:88rpx;
-  background:rgba(255,217,115,1);
+  width: 300rpx;
+  height: 100rpx;
   margin: 0 auto;
-  font-size:30rpx;
-font-family:PingFang SC;
-font-weight:bold;
-color:rgba(176,128,0,1);
 }
-.bttn{
-  float: right;
-  margin-top: -73rpx;
-  margin-right: 78rpx;
-  width: 188rpx;
-  height: 65rpx;
-  background: #F8F8F8;
-  z-index: 999;
-  border: 1rpx solid #38537E;
-  font-size:24rpx;
-  font-family:PingFang SC;
-  font-weight:500;
-  color:rgba(70,38,1,1);
-}
-
-

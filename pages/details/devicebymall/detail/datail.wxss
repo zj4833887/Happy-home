@@ -1,0 +1,148 @@
+/* pages/devicebymall/detail/detail.wxss */
+.detailPage{
+  margin-bottom: 120rpx;
+}
+.section {
+	margin-top: 20rpx;
+	margin-bottom: 30rpx;
+	vertical-align: middle;
+}
+
+.avatarWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center;
+  padding: 40rpx 26rpx;
+  box-sizing: border-box;
+}
+.avatarWrap image {
+  width: 154rpx;
+  height: 154rpx;
+}
+
+.avatarOn {
+  width: 130rpx;
+  height: 130rpx;
+  display: inline-block;
+  background: #a4d16b;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 130rpx;
+}
+.avatarOff {
+  width: 130rpx;
+  height: 130rpx;
+  display: inline-block;
+  background: #d85e4a;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 130rpx;
+}
+.avatarText {
+  height: 100%;
+  line-height: 100%;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22rpx;
+  flex-basis: 76%;
+}
+.userName {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.userName .itemName {
+  flex-basis: 50%;
+}
+.userName .itemName image{
+  width: 32rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
+.view_flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.view_flex label{
+  flex-basis: 70%;
+}
+
+.userName .btnCopy {
+  font-size: 22rpx;
+  background: #1890FF;
+  color: #fff;
+  padding: 0 10rpx;
+  line-height: 50rpx;
+  width: 140rpx
+}
+.userName .psd_error{
+  background: #d85e4a;
+}
+.userDescribe {
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  color: #666;
+}
+.clientInfo .section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  border-bottom: 1px solid #dddddd;
+  margin: 20rpx 0rpx;
+  padding: 20rpx;
+  
+}
+.section:last-child {
+  border-bottom: none;  
+}
+.clientInfo .section .text {
+    width: 150rpx;
+}
+.clientInfo .section .lang_text{
+  width: 350rpx;
+}
+.clientInfo .section .item {
+  text-align: right;
+}
+.clientInfo .section .item .btnBack{
+    font-size: 30rpx;
+}
+.edit_item{
+  display: flex;
+  align-items: center;
+}
+.edit_item label{
+  flex-basis: 50px;
+}
+.ope_link{
+  margin-left: 20rpx;
+}
+.edit_link{
+  color: #1890FF;
+  margin-right: 15rpx;
+}
+.confirm_edit_link{
+  color: rgb(5, 206, 5);
+}
+.cancel_link{
+  color: #666;
+}
+
+.edit_input{
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.item_value{
+  margin-right: 30rpx;
+}
+
+
+
+

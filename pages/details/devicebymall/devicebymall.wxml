@@ -1,0 +1,13 @@
+<!--pages/devicebymall/devicebymall.wxml-->
+<view class="pagewrap" bindtap="next">
+          <view class="listitem">
+            <view><span class="key">设备名称：</span><span class="value">1楼-大厅-A区南大门</span></view>
+            <view><span class="key">SN号：</span><span class="value">L4A0D011019B48R2B2</span></view>
+            <view><span class="key">设备属性：</span><span class="value">待入驻</span></view>
+            <view><span class="key">产品线：</span><span class="value">豹大屏</span></view>
+            <view><span class="key">版本号：</span><span class="value">V4.23.2020010220.0942UD</span></view>
+            <view><span class="key">运营商：</span><span class="value">中国移动</span></view>
+            <view><span class="key">状态：</span><span class="value">离线1天3小时34分29秒</span></view>
+            <view class="optwrap"><span class="key">操作：</span></view>
+          </view>
+</view>

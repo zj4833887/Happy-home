@@ -1,0 +1,19 @@
+<view class="my-box">
+  <view class="my-box-left">
+  </view>
+  <view class="my-box-center">
+    <view>
+    张杰
+    </view>
+    <view>
+    18406567112
+    </view>
+  </view>
+</view>
+<van-divider />
+<van-cell title="问题反馈" is-link  />
+<van-cell title="日常问题诊断步骤" is-link />
+<van-cell title="获取密码" is-link />
+<view class="kb">
+</view>
+<van-button size="large" type="primary">退出登录</van-button>

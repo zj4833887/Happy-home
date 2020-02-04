@@ -1,0 +1,97 @@
+.conts {
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  padding-bottom: 60rpx;
+}
+
+.currentWordNumber {
+  font-size: 28rpx;
+  color: gray;
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+}
+
+.hint {
+  font-size: 28rpx;
+  position: absolute;
+  left: 20rpx;
+  bottom: 10rpx;
+  color: #f60;
+}
+
+/* 图片 */
+
+.img_box {
+  height: 100%;
+  width: 690rpx;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.imgs {
+  width: 33.33333333%;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 20rpx; */
+  margin-top: 20rpx;
+}
+
+.imgs image {
+  width: 90%;
+  max-height: 212rpx;
+  border: 1px solid rgba(214, 212, 212, 0.1);
+  /* box-shadow: 5rpx 5rpx 1rpx 3rpx #e2e0e0; */
+}
+
+.imgs .images {
+  position: relative;
+}
+
+.images button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img_box .images {
+  width: 80%;
+  height: 80px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.img_box .images>image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.upload-img{
+  font-size: 24rpx;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-top: -115rpx;
+}
+.wen{
+  text-align: center;
+  color: red;
+}
+.btn{
+  width: 300rpx;
+  height: 100%;
+  margin-left: 285rpx;
+}
+.fou{
+  display: none;
+}

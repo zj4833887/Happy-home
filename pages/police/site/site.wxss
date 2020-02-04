@@ -1,0 +1,90 @@
+/* pages/police/site/site.wxss */
+.box{
+    width: 80%;
+    height: 100rpx;
+    /* background: salmon; */
+    margin: 0 auto;
+}
+.box-left{
+  width: 300rpx;
+  height: 100rpx;
+  background: seashell;
+  margin:0 auto;
+  text-align: center;
+  line-height: 100rpx;
+}
+.center-box{
+  width: 80%;
+  height: 200rpx;
+  /* background: salmon; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.center-box-left{
+  width: 33.3%;
+  height: 100%;
+  /* background: skyblue; */
+}
+.num{
+  font-size: 60rpx;
+  color: red;
+  text-align: center;
+  line-height: 100rpx;
+}
+.fault{
+  text-align: center;
+}
+.task{
+  width: 100%;
+  height: 80rpx;
+  /* background: salmon; */
+  text-align: center;
+  line-height: 80rpx;
+}
+.table{
+  width: 100%;
+  height: 300rpx;
+  /* background: cadetblue; */
+}
+.table-left{
+  width: 100%;
+  height: 50rpx;
+  /* background: salmon; */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 10rpx;
+  /* font-size: 25rpx; */
+}
+.table-left-three{
+  width: 70%;
+  height: 100%;
+}
+.table-left-first{
+  width: 30%;
+  height: 100%;
+  /* background: saddlebrown;l */
+}
+.table-left-two{
+  width: 80rpx;
+  height: 100%;
+  /* background: violet; */
+}
+/* ----------------------------------打卡--------------------- */
+.clock{
+    width: 40%;
+    height: 80rpx;
+    /* background: skyblue; */
+    text-align: center;
+    line-height: 80rpx;
+    float: left;
+}
+.clock-right{
+   width: 60%;
+    height: 80rpx;
+    /* background: skyblue; */
+    text-align: center;
+    line-height: 80rpx;
+    float: left;
+}

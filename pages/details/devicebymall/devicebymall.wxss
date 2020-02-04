@@ -1,0 +1,35 @@
+/* pages/details/devicebymall/devicebymall.wxss *//* pages/devicebymall/devicebymall.wxss */
+page{
+  overflow: hidden;
+}
+.pagewrap{
+  padding: 0 15px;
+  overflow: hidden;
+  height: calc(100%);
+  }
+.listitem{
+  border: 1px solid #bbb;
+  color: #101010;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom:10px;
+  line-height: 1.5;
+  width: calc(100% - 65px);
+  margin: 0 auto;
+  margin-top: 30rpx;
+  font-size:30rpx;
+}
+.key{
+  display: inline-block;
+  width: 60px;
+  text-align: left;
+  vertical-align: top;
+}
+.value{
+  display: inline-block;
+  width: calc(100% - 80px);
+  vertical-align: top;
+}
+.optwrap{
+  margin-top: 10px;
+}

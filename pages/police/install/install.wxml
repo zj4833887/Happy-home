@@ -1,0 +1,25 @@
+<!-- ---------------------------------------安装----------------------------------- -->
+<van-cell title="商场名称" value="北京朝阳大悦城" size="large" />
+<van-cell title="安装时间" value="晚22：00" size="large" />
+<van-cell title="安装台数" value="10台" size="large" />
+<van-cell title="收货地址" value="北京市朝阳区朝阳北路" size="large" />
+<van-cell title="卸货位置" value="北京市朝阳区朝阳北路" size="large" />
+<view class="tel-box"  data-tel="111111111" bindtap="calling">物流电话：1111111111(点击拨号)</view>
+<view class="tel-box"  data-tel="111111111" bindtap="calling">商拓电话：1111111111(点击拨号)</view>
+<view class="tel-box"  data-tel="111111111" bindtap="calling">运维电话：1111111111(点击拨号)</view>
+<view class="tel-box"  data-tel="111111111" bindtap="calling">商场电话：1111111111(点击拨号)</view>
+<!-- -----------------------------------------------------------------弹框--------------------------------- -->
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+<van-cell title="点位是否合格" value="{{array[index]}}" size="large" />
+ </picker>
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+<van-cell title="点位是否通电" value="{{array[index]}}" size="large" />
+ </picker>
+<!-- ------------------------------- -->
+<view class="timer" >
+<view bindtap="timer">开始</view>
+<text class='marright'>{{hours}}:{{minute}}:{{second}}</text>
+<view bindtap="over">
+结束
+</view>
+</view>

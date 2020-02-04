@@ -1,99 +1,63 @@
-<!--pages/details/details.wxml-->
-<view class="box">
-  <view class="box-top">
-      <view class="box-top-left">
-        <view class="box-top-left-icon">
-            <image src="../../src/public/icon_address.png">
-            </image>
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+<!-- <view class="search-box">
+ <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+<input class="search" placeholder="{{default}}" disabled="true"></input> 
+</picker>
+<input class="search" placeholder="全部"
+disabled="true">
+</input>
+</view> -->
+<!-- -----------------------------列表开始--------------------------- -->
+<view class="list">
+    <view class="list-box">
+     商场设备概览（共{{mall_sum}}个商场，{{client_sum}}台设备）
+    </view>
+    <view class="listBox">
+      <view class="listBox-left">
+        <view class="listBox-left-img">
         </view>
       </view>
-      <view class="box-top-center">
-          <view class="box-top-center-name">
-          于女士
+      <view class="listBox-center">
+          <view class="listBox-center-wz">什么商场，共多少台
           </view>
-          <view class="box-top-center-iphone">
-          137****8830
+          <view class="listBox-center-zx">
+          在线：40台
           </view>
-          <view class="box-top-center-address">
-          广东省深圳市南山区西丽镇沙河西路12号 丽新花园6栋1502号
+          <view class="listBox-center-zx">
+           离线：40台
           </view>
       </view>
-      <view class="box-top-right">
-       <view class="index-bottom-center-right-img">
-            <image src="../../src/index/10.png">
-            </image>
-            </view>
-            <view class="index-bottom-center-right">
-            去这里
-            </view>
+      <view class="listBox-left">
+              <view class="btn" bindtap="open">
+              查看详情
+              </view>
       </view>
+    </view>
+     <view class="listBox">
+      <view class="listBox-left">
+        <view class="listBox-left-img">
+        </view>
+      </view>
+      <view class="listBox-center">
+          <view class="listBox-center-wz">什么商场，共多少台
+          </view>
+          <view class="listBox-center-zx">
+          在线：40台
+          </view>
+          <view class="listBox-center-zx">
+           离线：40台
+          </view>
+      </view>
+      <view class="listBox-left" bindtap="open">
+              <view class="btn" >
+              查看详情
+              </view>
+      </view>
+    </view>
   </view>
-  <view class="box-bottom">
-      <view class="box-bottom-box">
-          <view style="height:95rpx;">
-          <view class="logo">
-              <image       src="../../src/public/logo.png"></image>
-          </view>
-          <view class="name">
-          优居家政服务
-          </view>
-          </view>
-          <view style="height:144rpx;margin-bottom: 28rpx;">
-          <view class="box-bottom-img">
-              <image src="../../src/detail/people.png">
-              </image>
-          </view>
-          <view class="box-bottom-detail">
-              <view class="box-bottom-detail-project">
-              老人看护
-              </view>
-              <view class="box-bottom-detail-introduce">
-              服务描述：卧室：床面平铺，台面物品摆放整 齐，家具电器擦拭，门窗清理，墙面地面除尘...
-              </view>
-              <view class="box-bottom-detail-sale">
-              10000元/月
-              </view>
-          </view>
-           </view>
-           <view class="box-service">
-              <view class="box-bottom-service">
-              服务时间：
-              </view>
-              <view class="time">2019年 10 月 24 日-2019年 11 月 25 日</view>
-          </view>
-          <view class="box-service">
-              <view class="box-ser">
-              预约服务人员数量：
-              </view>
-              <view class="ti">1 人</view>
-          </view>
-          <view class="box-service">
-              <view class="box-bottom-service">
-              服务时长：
-              </view>
-              <view class="time">2 个月</view>
-          </view>
-          <view class="box-service">
-              <view class="box-bottom-service">
-              服务时常：
-              </view>
-              <view class="time">1个月</view>
-          </view>
-          <view class="box-service">
-              <view class="box-bottom-service">
-             1个月
-              </view>
-              <view class="time" style="color:#DD0B0B;font-size:30rpx"
-              >5800元</view>
-          </view>
-          <view class="box-service">
-              <view class="box-bottom-service">
-              评价：
-              </view>
-              <view class="time">无</view>
-          </view>
-          
-      </view>
-  </view>
-</view>
-

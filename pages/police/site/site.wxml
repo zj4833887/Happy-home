@@ -1,0 +1,116 @@
+<!-- ---------------------------------------------巡检 -->
+<view class="box">
+    <view class="box-left">
+      北京---张晓飞
+    </view>
+</view>
+<view class="center-box">
+    <view class="center-box-left">
+        <view class="num">
+              10
+        </view>
+         <view>
+          今日计划数
+         </view>
+    </view>
+    <view class="center-box-left">
+          <view class="num">
+            1
+          </view>
+           <view class="fault">
+          排障数
+          </view>
+    </view>
+</view>
+<view class="task">
+    我的任务
+</view>
+<view class="center-box">
+    <view class="center-box-left">
+        <view class="num">
+              10
+        </view>
+         <view>
+         设备总数
+         </view>
+    </view>
+    <view class="center-box-left">
+          <view class="num">
+            1
+          </view>
+           <view class="fault">
+          商场总数
+          </view>
+    </view>
+     <view class="center-box-left">
+          <view class="num">
+            1
+          </view>
+           <view class="fault">
+         离线设备
+          </view>
+    </view>
+</view>
+<!-- --------------------------------------------------------------巡检表-------------------------------------------- -->
+<van-divider contentPosition="center">2020-01-13</van-divider>
+<view class="table">
+    <view class="table-left">
+    <view class="table-left-two">
+      #
+    </view>
+        <view class="table-left-three" >
+        商场
+        </view>
+        <view class="table-left-first" >
+        状态
+        </view>
+    </view>
+    <!-- --------------------------------内容添加-------------------------- -->
+    <view class="table-left">
+    <view class="table-left-two">
+      1
+    </view>
+        <view class="table-left-three" >
+        咸阳世纪金花渭阳店
+        </view>
+        <view class="table-left-first" >
+       异常
+        </view>
+    </view>
+     <view class="table-left">
+    <view class="table-left-two">
+      1
+    </view>
+        <view class="table-left-three" >
+        咸阳世纪金花渭阳店
+        </view>
+        <view class="table-left-first" >
+       异常
+        </view>
+    </view>
+</view>
+<!-- ------------------------------------------------------------打卡----------------- -->
+<view class="clock">
+开始时间
+</view>
+<view class="clock-right">
+2020-01-13 10:05:50
+</view>
+<view class="clock">
+结束时间
+</view>
+<view class="clock-right">
+2020-01-13 10:05:50
+</view>
+<view class="clock">
+预计总耗时
+</view>
+<view class="clock-right">
+5小时5分钟 
+</view>
+<view class="clock">
+实际总耗时
+</view>
+<view class="clock-right">
+12小时13分钟
+</view>

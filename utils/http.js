@@ -2,6 +2,7 @@ import { HOSTNAME } from './base.js';
 // let { HOSTNAME } = require('./base.js')
 function api(url, method, data = {}) {
   let contentType = method.toUpperCase() == 'POST' ? 'application/x-www-form-urlencoded' : 'applicayion/json'
+  let token ='d9ba8436f098fa7450c10ec941694fd331bb497f91ac8ecab301ecb42b47e67a'
   return new Promise((resole, reject) => {
     wx.request({
       url: url,
@@ -9,6 +10,7 @@ function api(url, method, data = {}) {
       data: data,
       header: {
         'Content-type': contentType,
+         Authorization:token
       },
       dataType: 'json',
       xhrFields: { withCredentials: true },

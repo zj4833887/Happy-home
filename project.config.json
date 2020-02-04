@@ -23,7 +23,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wx5b9e8bb1cfee6e43",
+	"appid": "wxa2263aead15c65c5",
 	"projectname": "Happy%20home",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -64,36 +64,43 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/my/book/book",
-					"pathName": "pages/my/book/book",
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 2,
-					"name": "pages/ceshi/ceshi",
-					"pathName": "pages/ceshi/ceshi",
+					"name": "pages/my/getpassword/getpassword",
+					"pathName": "pages/my/getpassword/getpassword",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/login/login",
-					"pathName": "pages/index",
+					"id": 3,
+					"name": "pages/police/subpage/subpage",
+					"pathName": "pages/police/subpage/subpage",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 4,
-					"name": "pages/my/leave/apply/apply",
-					"pathName": "pages/my/leave/apply/apply",
+					"name": "pages/police/map/map",
+					"pathName": "pages/police/map/map",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 5,
-					"name": "pages/information/information",
-					"pathName": "pages/information/information",
+					"name": "pages/details/devicebymall/detail/datail",
+					"pathName": "pages/details/devicebymall/detail/datail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/details/devicebymall/devicebymall",
+					"pathName": "pages/details/devicebymall/devicebymall",
 					"query": "",
 					"scene": null
 				}

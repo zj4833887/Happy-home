@@ -1,0 +1,12 @@
+<view class="bottom-box">
+  <view class="bottom-box-left"  >
+    <view class="box-left-z" wx:for="{{cost}}" wx:key="item">
+    {{item.data}}
+    </view>
+  </view>
+  <view class="bottom-box-left">
+  <view class="box-left-z" wx:for="{{9}}" wx:key="item">
+    {{item}}
+    </view>
+  </view>
+</view>
